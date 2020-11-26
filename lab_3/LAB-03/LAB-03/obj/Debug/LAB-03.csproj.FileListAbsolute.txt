@@ -1,0 +1,7 @@
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\obj\Debug\LAB-03.csprojAssemblyReference.cache
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\obj\Debug\LAB-03.csproj.CoreCompileInputs.cache
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\bin\Debug\LAB-03.exe.config
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\bin\Debug\LAB-03.exe
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\bin\Debug\LAB-03.pdb
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\obj\Debug\LAB-03.exe
+C:\БГТУ\ООТП\lab_3\LAB-03\LAB-03\obj\Debug\LAB-03.pdb
