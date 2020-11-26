@@ -1,0 +1,5 @@
+FCL/BCL
+сборка
+из чего состоит C# 
+int System.int32
+String string
