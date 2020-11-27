@@ -12,13 +12,13 @@ namespace LAB_03
         static void Main(string[] args)
         {
             Product[] PRDCT = new Product[8];
-            PRDCT[0] = new Product(123, "Сыр");
-            PRDCT[1] = new Product(618, "Сметана");
-            PRDCT[2] = new Product(78,"45");
-            PRDCT[3] = new Product(419,"Молоко",14231,"Савушкин продукт", 23,67,2);
-            PRDCT[4] = new Product(349,"Сыр",-39,"ОЛ",-87,0,-1);
-            PRDCT[5] = new Product(934,"Сыр",4781,"Молочное",15,8,30);
-            PRDCT[6] = new Product(276,"Сыр",3489,"Вкусное",36,3,41);
+            PRDCT[0] = new Product("Сыр");
+            PRDCT[1] = new Product("Сметана");
+            PRDCT[2] = new Product("45");
+            PRDCT[3] = new Product("Молоко",14231,"Савушкин продукт", 23,67,2);
+            PRDCT[4] = new Product("Сыр",-39,"ОЛ",-87,0,-1);
+            PRDCT[5] = new Product("Сыр",4781,"Молочное",15,8,30);
+            PRDCT[6] = new Product("Сыр",3489,"Вкусное",36,3,41);
             PRDCT[7] = new Product();
             short count = 0;
             foreach(Product i in PRDCT)
@@ -52,6 +52,9 @@ namespace LAB_03
                 Product.PriceAllConut(out string namfe, PRDCT[i], out int sum);           // использование модификатора out
                 Console.WriteLine($"{i}) {namfe} - {sum}");
             }
+
+            var AnonymousType = new { id = 548, name = "хлеб" };    // анонимный тип
+            Console.WriteLine($"Анонимный тип: {AnonymousType.id} - {AnonymousType.name}");
 
         }
         

@@ -8,7 +8,7 @@ namespace LAB_03
 {
     partial class Product
     {
-        private int id;         // ID
+        private readonly int id;         // ID
         private string name;    // Наименование
         private short upc;      // UPC (штрихкод)
         private string factory; // Производитель
@@ -16,13 +16,14 @@ namespace LAB_03
         private int data;       // Срок хранения (дней)
         private short count;    // Количество
         public static int CountArray = 0;
+        const int forhesh = 9548756;
         public Product()
         {
             CountArray++;
         }
-        public Product(int id, string name, short upc = 1549, string factory = "LOBIN", int price = 600, int data = 90, short count = 14)
+        public Product(string name, short upc = 1549, string factory = "LOBIN", int price = 600, int data = 90, short count = 14)
         {
-            ID = id;
+            id = GetHashCode();
             NAME = name;
             UPC = upc;
             FACTORY = factory;
@@ -45,12 +46,6 @@ namespace LAB_03
             get
             {
                 return id;
-            }
-            set
-            {
-                if (value > 0)
-                    id = value;
-                else id = -1;
             }
         }
         public string NAME         // Наименование
@@ -136,17 +131,17 @@ namespace LAB_03
 
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            return (object)id == obj;
         }
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return forhesh - CountArray * 2;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return NAME;
         }
     }
 }
