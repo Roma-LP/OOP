@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB_04
 {
-    class List
+    public class List
     {
         List<string> Collect = new List<string>();
         public int count = 0;
@@ -17,6 +17,7 @@ namespace LAB_04
                 str[i]+=Date.GetData();
                 Collect.Add(str[i]);
                 count++;
+                
             }
         }
         public void Add(string str)
@@ -25,12 +26,16 @@ namespace LAB_04
             Collect.Add(str);
             count++;
         }
+        void Add(string str,bool b)
+        {
+            Collect.Add(str);
+            count++;
+        }
         public void Add(List lst)
         {
             for (int i = 0; i < lst.count; i++)
             {
-                Collect.Add(lst[i]);
-                count++;
+                Add(lst[i],true);
             }
         }
         public void print()
@@ -53,7 +58,7 @@ namespace LAB_04
             List nwCollect = new List();
             for (int i = 1; i < lt.count; i++)
             {
-                nwCollect.Add(lt[i]);
+                nwCollect.Add(lt[i], true);
             }
             return nwCollect;
         }
@@ -72,11 +77,11 @@ namespace LAB_04
             List nwCollect = new List();
             for (int i = 0; i < lt1.count; i++)
             {
-                nwCollect.Add(lt1[i]);
+                nwCollect.Add(lt1[i],true);
             }
             for (int j = 0; j < lt2.count; j++)
             {
-                nwCollect.Add(lt2[j]);
+                nwCollect.Add(lt2[j],true);
             }
             return nwCollect;
         }
@@ -86,6 +91,29 @@ namespace LAB_04
             get
             {
                 return Collect[index];
+            }
+        }
+
+        public class Owner
+        {
+            int ID;
+            string Name;
+            public Owner():this(000,"NoName")
+            {
+
+            }
+            public Owner(string Name,int ID):this(ID,Name)
+            {
+
+            }
+            public Owner(int ID,string Name)
+            {
+                this.ID = ID;
+                this.Name = Name;
+            }
+            public void Print()
+            {
+                Console.WriteLine($"ID: {ID} Name: {Name}");
             }
         }
 
