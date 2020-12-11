@@ -146,24 +146,30 @@ namespace LAB_05
             Document dc = new Document("roma");
             ((IFunk)dc).info();
             dc.info();
-            /*
-            pastry pastry1 = new pastry(200);
-            cookie cookie1 = new cookie(200, 450);
-            chocolateCandy chocolateCandy1 = new chocolateCandy(150, 350);
-            caramel caramel1 = new caramel(100, 400);
 
-            ICan ican = chocolateCandy1 as ICan;
-            if (ican != null)
+            Document doc1 = new Document("Car");
+            Waybill wb1 = new Waybill("Plan", "House", 3);
+            Receipt rec1 = new Receipt("Candy","Bike",6,14587);
+            Organization[] organ = new Organization[3] { doc1, wb1, rec1 };
+            Printer printer = new Printer();
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("Поддерживается ICan\n");
+                printer.IAmPrinting(organ[i]);
             }
-            else
-            {
-                Console.WriteLine("ICan не поддерживается\n");
-            }
+            Console.WriteLine("-------------------------------------------------");
+            
+            //ICan ican = chocolateCandy1 as ICan;
+            //if (ican != null)
+            //{
+            //    Console.WriteLine("Поддерживается ICan\n");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("ICan не поддерживается\n");
+            //}
 
-            ((ICan)pastry1).info();
-            pastry1.info();
+            //((ICan)pastry1).info();
+            //pastry1.info();
 
 
             if (chocolateCandy1 is ICan)
@@ -171,19 +177,6 @@ namespace LAB_05
             else
                 Console.WriteLine("ICan не реализован\n");
 
-            Printer printer = new Printer();
-            candyBox[] candyBox = new candyBox[3] { cookie1, chocolateCandy1, caramel1 };
-            for (int i = 0; i < 3; i++)
-            {
-                printer.IAmPrinting(candyBox[i]);
-            }*/
         }
     }
-
-    /*class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }*/
 }

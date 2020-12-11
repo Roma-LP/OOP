@@ -63,4 +63,44 @@ namespace LAB_05
             return $"Waybill ->  Name: \t{Name}\n\t Product: \t{Product}\n\t CountProduct: {CountProduct}";
         }
     }
+
+
+    class Receipt : Waybill, IFunk   // Квитанция
+    {
+        public int ID;
+        public Receipt(string Name, string Product, int CountProduct, int ID) : base(Name,Product,CountProduct)
+        {
+            this.ID = ID;
+        }
+        public override int GetHashCode()
+        {
+            Console.Write("Receipt -> GetHashCode()");
+            return ID.GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+
+            //Receipt pr = obj as Receipt;  // попытка преобразования к определенному типу
+            //if (pr as Receipt == null)
+            //    return false;
+
+            //return pr.weight == this.weight;
+        }
+        public override string ToString()
+        {
+            return $"Waybill ->  Name: \t{Name}\n\t Product: \t{Product}\n\t CountProduct: {CountProduct}" +
+                $"ID: \t{ID}";
+        }
+    }
+
+
+    sealed class Printer
+    {
+        public void IAmPrinting(Organization obj)
+        {
+            Console.WriteLine(obj.ToString());
+        }
+    }
 }
