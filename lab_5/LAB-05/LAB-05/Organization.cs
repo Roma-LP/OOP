@@ -8,7 +8,7 @@ namespace LAB_05
 {
     abstract class Organization    // Организация
     {
-        public /*virtual*/ string Name { get; set; } = "NoName";
+        public string Name { get; set; } = "NoName";
         public abstract void info();
         public override string ToString()
         {
