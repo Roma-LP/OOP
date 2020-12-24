@@ -34,10 +34,17 @@ namespace LAB_05
             Console.WriteLine($"IFunk.info() Document -> {Name}");
         }
 
+        public void example()
+        {
+            Console.WriteLine($"Document IFunk.example() пример реализации интерфейса");
+        }
+
         public override string ToString()
         {
             return $"Document ->  Name: {Name}";
         }
+
+        
     }
 
 
@@ -51,11 +58,12 @@ namespace LAB_05
             this.Product = Product;
             this.CountProduct = CountProduct;
         }
-        public void info()
+        public override void info()
         {
-            Console.WriteLine($"info() Waybill ->  Name: \t{Name}" +
-                $"\n\t Product: \t{Product}\n" +
-                $"\t CountProduct: {CountProduct}");
+            //Console.WriteLine($"info() Waybill ->  Name: \t{Name}" +
+            //    $"\n\t Product: \t{Product}\n" +
+            //    $"\t CountProduct: {CountProduct}");
+            Console.WriteLine($"info() " + ToString());
         }
 
         public override string ToString()
@@ -65,7 +73,7 @@ namespace LAB_05
     }
 
 
-    class Receipt : Waybill, IFunk   // Квитанция
+    sealed class Receipt : Waybill, IFunk   // Квитанция
     {
         public int ID;
         public Receipt(string Name, string Product, int CountProduct, int ID) : base(Name,Product,CountProduct)
@@ -74,7 +82,7 @@ namespace LAB_05
         }
         public override int GetHashCode()
         {
-            Console.Write("Receipt -> GetHashCode()");
+            Console.Write("Receipt -> GetHashCode() ");
             return ID.GetHashCode();
         }
         public override bool Equals(object obj)
@@ -82,21 +90,21 @@ namespace LAB_05
             if (obj == null)
                 return false;
 
-            //Receipt pr = obj as Receipt;  // попытка преобразования к определенному типу
-            //if (pr as Receipt == null)
-            //    return false;
+            Receipt pr = obj as Receipt;  // попытка преобразования к определенному типу
+            if (pr == null)
+                return false;
 
-            //return pr.weight == this.weight;
+            return pr.ID == this.ID;
         }
         public override string ToString()
         {
-            return $"Waybill ->  Name: \t{Name}\n\t Product: \t{Product}\n\t CountProduct: {CountProduct}" +
-                $"ID: \t{ID}";
+            return $"Receipt ->  Name: \t{Name}\n\t Product: \t{Product}\n\t CountProduct: {CountProduct}" +
+                $"\n\t ID: \t{ID}";
         }
     }
 
 
-    sealed class Printer
+    class Printer
     {
         public void IAmPrinting(Organization obj)
         {

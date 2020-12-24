@@ -9,5 +9,6 @@ namespace LAB_05
     public interface IFunk
     {
         void info();
+        void example();
     }
 }
