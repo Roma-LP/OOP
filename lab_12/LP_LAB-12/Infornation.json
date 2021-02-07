@@ -1,0 +1,235 @@
+{
+  "PublicConstrtExist": true,
+  "Name": "Airplane",
+  "AssemblyName": "LP_LAB_12.Airplane, LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "namePublicFields": [
+    {
+      "Name": "Name",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.String Name",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "Speed",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 Speed",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "From",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.String From",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "To",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.String To",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "count",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int16 count",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    }
+  ],
+  "namePublicProperties": [
+    {
+      "Name": "proppubl",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 proppubl",
+      "Signature2": "System.Int32 proppubl",
+      "MemberType": 16,
+      "GenericArguments": null
+    }
+  ],
+  "namePrivateFields": [
+    {
+      "Name": "pole",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 pole",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "smtprv",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.String smtprv",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "<proppriv>k__BackingField",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 <proppriv>k__BackingField",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    },
+    {
+      "Name": "<proppubl>k__BackingField",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 <proppubl>k__BackingField",
+      "Signature2": null,
+      "MemberType": 4,
+      "GenericArguments": null
+    }
+  ],
+  "namePrivateProperties": [
+    {
+      "Name": "proppriv",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 proppriv",
+      "Signature2": "System.Int32 proppriv",
+      "MemberType": 16,
+      "GenericArguments": null
+    }
+  ],
+  "namePublicFunc": [
+    {
+      "Name": "get_proppubl",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 get_proppubl()",
+      "Signature2": "System.Int32 get_proppubl()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "set_proppubl",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Void set_proppubl(Int32)",
+      "Signature2": "System.Void set_proppubl(System.Int32)",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "methodpublic",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Void methodpublic()",
+      "Signature2": "System.Void methodpublic()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "PrintData",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Void PrintData()",
+      "Signature2": "System.Void PrintData()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "ToString",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.String ToString()",
+      "Signature2": "System.String ToString()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "Equals",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Boolean Equals(System.Object)",
+      "Signature2": "System.Boolean Equals(System.Object)",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "GetHashCode",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 GetHashCode()",
+      "Signature2": "System.Int32 GetHashCode()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "GetType",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.Type GetType()",
+      "Signature2": "System.Type GetType()",
+      "MemberType": 8,
+      "GenericArguments": null
+    }
+  ],
+  "namePrivateFunc": [
+    {
+      "Name": "get_proppriv",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Int32 get_proppriv()",
+      "Signature2": "System.Int32 get_proppriv()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "set_proppriv",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Void set_proppriv(Int32)",
+      "Signature2": "System.Void set_proppriv(System.Int32)",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "methodprivate",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Void methodprivate()",
+      "Signature2": "System.Void methodprivate()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "Finalize",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "Void Finalize()",
+      "Signature2": "System.Void Finalize()",
+      "MemberType": 8,
+      "GenericArguments": null
+    },
+    {
+      "Name": "MemberwiseClone",
+      "AssemblyName": "LP_LAB-12, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ClassName": "LP_LAB_12.Airplane",
+      "Signature": "System.Object MemberwiseClone()",
+      "Signature2": "System.Object MemberwiseClone()",
+      "MemberType": 8,
+      "GenericArguments": null
+    }
+  ],
+  "NameSpace": "LP_LAB_12",
+  "Parent": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+}
